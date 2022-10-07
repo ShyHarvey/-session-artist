@@ -1,0 +1,10 @@
+h1::after, h2::after{
+    position: relative;
+    display: inline-block;
+    content:'';
+    z-index: -1;
+    background: #A67C52;
+    height: 0.1em;
+    width: 1em;
+    transform:translate(-1em,0.05em)
+}
