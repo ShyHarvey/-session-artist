@@ -4,7 +4,15 @@
 
 import Collapse from '../../node_modules/bootstrap/js/dist/collapse'
 
-const collapse = new Collapse(document.querySelectorAll('.collapse'))
+import Swiper, {FreeMode} from 'swiper';
+
+
+const swiper = new Swiper('.swiper', {
+    slidesPerView: "auto",
+        spaceBetween: 30,
+        FreeMode:true,
+  });
+  
 
 
 

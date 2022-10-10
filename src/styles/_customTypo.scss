@@ -6,5 +6,6 @@ h1::after, h2::after{
     background: #A67C52;
     height: 0.1em;
     width: 1em;
-    transform:translate(-1em,0.05em)
+    transform:translate(-1em,0.05em);
+    margin-left: -4px;
 }

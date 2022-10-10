@@ -1,0 +1,11 @@
+.social_icon{
+    width: fit-content;
+    height: fit-content;
+    fill: #007163;
+    &:hover{
+        fill: rgba(1, 141, 124, 1);
+    }
+}
+.social{
+    transform: translateX(0.5em);
+}

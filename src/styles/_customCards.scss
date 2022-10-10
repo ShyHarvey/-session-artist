@@ -1,0 +1,35 @@
+.card{
+    width: 165px;
+    height: 277px;
+    .card-img-overlay:hover{
+        background-color: rgba(0, 113, 99, 0.7);
+        color: #fff;
+       transition: all 0.2s;
+    }
+}
+.custom-link{
+    color: #fff;
+    opacity: 0;
+    font-size: 1.5rem;
+    margin: auto;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    &:hover{
+        color: #fff;
+       opacity: 1;
+       transition: all 0.2s;
+    }
+    p{
+        transform: translateY(124px);
+    }
+}
+.swiper{
+    height: 277px;
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+.swiper-slide{
+    width: auto;
+}

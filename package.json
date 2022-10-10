@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://shyharvey.github.io/-session-artist/",
+  "homepage": "https://shyharvey.github.io/-session-artist",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
@@ -36,6 +36,7 @@
     "gulp-typescript": "^6.0.0-alpha.1",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.37.5",
+    "swiper": "^8.4.3",
     "typescript": "^4.3.5",
     "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
