@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <title>Session artist</title>
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./index.html">
             <img src="img/logo.svg" alt="Logo" width="156" height="72">
           </a>          
           <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,23 +28,79 @@
             </div>
             <div class="d-flex flex-lg-row flex-column gap-3 col-lg-5 col-12 mt-5 mt-lg-0">
               <div class="d-grid col-lg-5 col-7 mx-auto">
-                <button class="btn btn-outline-secondary" type="submit">Log in</button>
+                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Login in</button>
+                <div class="modal fade" id="loginModal" tabindex="-1">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="loginModalLabel">Login in</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="loginInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginInputEmail1" aria-describedby="emailHelp">
+                          </div>
+                          <div class="mb-3">
+                            <label for="loginInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginInputPassword1">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-secondary">Login in</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="d-grid col-lg-5 col-7 mx-auto">
-                <button class="btn btn-secondary" type="submit">Register</button>
+                <button class="btn btn-secondary" type="submit" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                <div class="modal fade" id="registerModal" tabindex="-1">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="registerModalLabel">Register</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="registerInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="registerInputEmail1" aria-describedby="emailHelp">
+                          </div>
+                          <div class="mb-3">
+                            <label for="registerInputEmail1" class="form-label">Choose a Username</label>
+                            <input type="text" class="form-control" id="registerInputUsername1" aria-describedby="emailHelp">
+                          </div>
+                          <div class="mb-3">
+                            <label for="registerInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerInputPassword1">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-secondary">Join</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             </div>
           </div>
       </nav>
   </header>
- <main>
+ <main class="main">
   <div class="container mt-5">
     <div class="row text-center">
-      <h1 class="display-1 mt-2 "><strong>Session Artists for your <br> dream project.</strong></h1>
+      <h1 class="display-3 mt-2 position-relative">Session Artists for your <br> dream project</h1>
       <p class="lead mt-3"><strong>Select Category</strong></p>
       <div class="d-grid gap-2 col-9 mx-auto d-flex justify-content-center">
-        <button class="btn btn-outline-success col-6" type="button">Find an srtist</button>
+        <button class="btn btn-outline-success col-6" type="button">Find an artist</button>
         <button class="btn btn-outline-secondary col-6" type="button">Become seller</button>
       </div>
     </div>
@@ -53,61 +109,61 @@
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="card">
-              <img src="./img/guitar.jpg" class="card-img" width="165" height="277" alt="Guitar">
+            <div class="card card_custom">
+              <img src="./img/guitar.jpg" class="card-img" width="165" height="277" alt="Guitarist">
               <div class="card-img-overlay p-0 ">
-              <a href="#" class="stretched-link custom-link">
-                <p class="m-0">Guitar.</p>
+              <a href="./Guitarists.html" class="stretched-link custom-link">
+                <p class="m-0">Guitarist</p>
               </a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card">
-              <img src="./img/piano.jpg" class="card-img" width="165" height="277" alt="Guitar">
+            <div class="card card_custom">
+              <img src="./img/piano.jpg" class="card-img" width="165" height="277" alt="Piano">
               <div class="card-img-overlay p-0 ">
-              <a href="#" class="stretched-link custom-link">
-                <p class="m-0">Piano.</p>
+              <a href="./Guitarists.html" class="stretched-link custom-link">
+                <p class="m-0">Pianist</p>
               </a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card">
-              <img src="./img/drums.jpg" class="card-img" width="165" height="277" alt="Guitar">
+            <div class="card card_custom">
+              <img src="./img/drums.jpg" class="card-img" width="165" height="277" alt="Drums">
               <div class="card-img-overlay p-0 ">
-              <a href="#" class="stretched-link custom-link">
-                <p class="m-0">Drums.</p>
+              <a href="./Guitarists.html" class="stretched-link custom-link">
+                <p class="m-0">Drums</p>
               </a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card">
-              <img src="./img/vocals.jpg" class="card-img" width="165" height="277" alt="Guitar">
+            <div class="card card_custom">
+              <img src="./img/vocals.jpg" class="card-img" width="165" height="277" alt="Vocals">
               <div class="card-img-overlay p-0 ">
-              <a href="#" class="stretched-link custom-link">
-                <p class="m-0">Vocals.</p>
+              <a href="./Guitarists.html" class="stretched-link custom-link">
+                <p class="m-0">Vocals</p>
               </a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card">
-              <img src="./img/recording.jpg" class="card-img" width="165" height="277" alt="Guitar">
+            <div class="card card_custom">
+              <img src="./img/recording.jpg" class="card-img" width="165" height="277" alt="Recording">
               <div class="card-img-overlay p-0 ">
-              <a href="#" class="stretched-link custom-link">
-                <p class="m-0">Recording.</p>
+              <a href="./Guitarists.html" class="stretched-link custom-link">
+                <p class="m-0">Recording</p>
               </a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="card">
-              <img src="./img/Arrangement.jpg" class="card-img" width="165" height="277" alt="Guitar">
+            <div class="card card_custom">
+              <img src="./img/Arrangement.jpg" class="card-img" width="165" height="277" alt="Arrangement">
               <div class="card-img-overlay p-0 ">
-              <a href="#" class="stretched-link custom-link">
-                <p class="m-0">Arrangement.</p>
+              <a href="./Guitarists.html" class="stretched-link custom-link">
+                <p class="m-0">Arrangement</p>
               </a>
               </div>
             </div>
@@ -116,10 +172,10 @@
       </div>
   </div>
   <section class="container text-center">
-    <h2 class="social mt-5 text-center "><strong>Social.</strong></h2>
+    <h2 class="social text-center position-relative"><strong>Social.</strong></h2>
     <div class="row justify-content-center">
       <div class="social_icon instagram">
-        <a href="#">
+        <a href="https://www.instagram.com/" target="_blank">
         <svg width="40" height="40">
           <g id="instagram" >
           <path d="M23.8281 20C23.8281 22.1143 22.1143 23.8281 20 23.8281C17.8857 23.8281 16.1719 22.1143 16.1719 20C16.1719 17.8857 17.8857 16.1719 20 16.1719C22.1143 16.1719 23.8281 17.8857 23.8281 20Z"/>
@@ -130,7 +186,7 @@
         </a>
       </div>
       <div class="social_icon facebook">
-        <a href="#">
+        <a href="https://www.facebook.com/" target="_blank">
           <svg width="40" height="40">
             <g id="facebook">
             <path d="M40 20C40 8.95313 31.0469 0 20 0C8.95313 0 0 8.95313 0 20C0 31.0469 8.95313 40 20 40C20.1172 40 20.2344 40 20.3516 39.9922V24.4297H16.0547V19.4219H20.3516V15.7344C20.3516 11.4609 22.9609 9.13281 26.7734 9.13281C28.6016 9.13281 30.1719 9.26563 30.625 9.32813V13.7969H28C25.9297 13.7969 25.5234 14.7812 25.5234 16.2266V19.4141H30.4844L29.8359 24.4219H25.5234V39.2266C33.8828 36.8281 40 29.1328 40 20V20Z"/>
@@ -139,7 +195,7 @@
         </a>
       </div>
       <div class="social_icon twitter">
-        <a href="#">
+        <a href="https://twitter.com/" target="_blank">
           <svg width="40" height="40">
             <g id="twitter">
             <path d="M20 0C8.97204 0 0 8.97204 0 20C0 31.0271 8.97204 40 20 40C31.0271 40 40 31.0271 40 20C40 8.97204 31.0288 0 20 0ZM28.9221 15.4225C28.931 15.6207 28.9358 15.8205 28.9358 16.0203C28.9358 22.1034 24.3068 29.1154 15.8374 29.1154C13.2377 29.1154 10.8177 28.3558 8.78112 27.0491C9.14122 27.0918 9.50777 27.1135 9.87916 27.1135C12.0366 27.1135 14.0208 26.3772 15.5966 25.143C13.5825 25.1059 11.8819 23.7751 11.2962 21.9455C11.5766 21.9987 11.8658 22.0285 12.1614 22.0285C12.5812 22.0285 12.9888 21.9737 13.3747 21.8682C11.2688 21.4461 9.68259 19.5859 9.68259 17.3544C9.68259 17.3351 9.68259 17.3149 9.6834 17.2964C10.3037 17.6404 11.0135 17.8482 11.7675 17.8716C10.5333 17.0474 9.72045 15.6376 9.72045 14.0409C9.72045 13.1966 9.94683 12.4055 10.3432 11.7256C12.6126 14.5114 16.0058 16.3433 19.8308 16.5367C19.7519 16.1991 19.7124 15.8487 19.7124 15.487C19.7124 12.9453 21.7731 10.8837 24.3148 10.8837C25.6392 10.8837 26.834 11.4428 27.675 12.3371C28.7247 12.1308 29.7076 11.749 30.5994 11.2197C30.253 12.2952 29.5255 13.1966 28.5725 13.767C29.5045 13.6558 30.3939 13.4093 31.2165 13.0428C30.6026 13.9644 29.822 14.7756 28.9221 15.4225Z"/>
@@ -151,7 +207,7 @@
   </section>
  </main>
  <footer>
-  <div class="container my-5  position-relative">
+  <div class="container mb-5 position-relative">
     <div class="logo col-6 text-center"><img src="img/logo.svg" alt="Logo" width="156" height="72"></div>
     <div class="row flex-row mt-5 mb-3 justify-content-between">
       <div class="footer_left col-6 col-md-4 col-lg-3 d-flex gap-3 flex-column align-items-center flex-md-row">

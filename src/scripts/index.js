@@ -2,7 +2,8 @@
 // import '../../node_modules/bootstrap/js/dist/collapse';
 // import '../../node_modules/bootstrap/js/dist/tab';
 
-import Collapse from '../../node_modules/bootstrap/js/dist/collapse'
+import Collapse from '../../node_modules/bootstrap/js/dist/collapse';
+import Modal from '../../node_modules/bootstrap/js/dist/modal';
 
 import Swiper, {FreeMode} from 'swiper';
 

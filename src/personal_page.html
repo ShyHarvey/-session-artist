@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Session artist</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="img/logo.svg" alt="Logo" width="156" height="72">
+                </a>
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <div class="navbar-nav mx-auto mb-2 mb-lg-0 mt-3 mt-lg-0">
+                        <form class="d-flex" role="search">
+                            <input class="form-control ms-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit">Search</button>
+                        </form>
+                    </div>
+                    <div class="d-flex flex-lg-row flex-column gap-3 col-lg-5 col-12 mt-5 mt-lg-0">
+                        <div class="d-grid col-lg-5 col-7 mx-auto">
+                            <button class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Login in</button>
+                            <div class="modal fade" id="loginModal" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fs-5" id="loginModalLabel">Login in</h2>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="loginInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                    <input type="email" class="form-control" id="loginInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="loginInputPassword1" class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="loginInputPassword1">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-secondary">Login in</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-grid col-lg-5 col-7 mx-auto">
+                            <button class="btn btn-secondary" type="submit" data-bs-toggle="modal"
+                                data-bs-target="#registerModal">Register</button>
+                            <div class="modal fade" id="registerModal" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title fs-5" id="registerModalLabel">Register</h2>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="registerInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                    <input type="email" class="form-control" id="registerInputEmail1"
+                                                        aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="registerInputEmail1" class="form-label">Choose a
+                                                        Username</label>
+                                                    <input type="text" class="form-control" id="registerInputUsername1"
+                                                        aria-describedby="emailHelp">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="registerInputPassword1"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control"
+                                                        id="registerInputPassword1">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-secondary">Join</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="my-4 position-relative">@nickportman</h1>
+            <div class="row">
+                <div class="card border-light col-12 col-md-4 d-md-block">
+                    <img src="./img/portrait1.jpg" class="card-img-top" alt="Portrait">
+                    <div class="card-body row  justify-content-around">
+                        <h5 class="card-title  p-0 col-10"><strong>@nickportman</strong></h5>
+                        <div class="star p-0 col-2">
+                            <p class="m-0"><strong>5.0</strong></p>
+                            <img src="./img/star-fill.svg" width="18" height="18" alt="star" />
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quis quo itaque
+                            nam
+                            distinctio sunt!</p>
+                        <div class="row justify-content-around align-items-center">
+                            <p class="col-7 m-0 p-0">starting <span class="text-success">at 5$</span></p>
+                            <a href="./personal_page.html" class="btn btn-secondary col-5">More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <ul class="nav mt-3 mt-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link link-dark active" aria-current="page" href="#">Standart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="#">Premium</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="#">Elite</a>
+                        </li>
+                    </ul>
+                    <div class="card border-success my-3">
+                        <div class="card-body text-success">
+                            <h5 class="card-title">10$</h5>
+                            <p class="card-text m-0">60 sec</p>
+                            <p class="card-text m-0">1 revision</p>
+                        </div>
+                        <div class="card-footer px-4 bg-transparent border-success">
+                            <div class="row justify-content-start align-items-center">
+                                <img src="./img/check-lg.svg" class="check p-0" width="20" height="20" alt="check" />
+                                <p class="m-0 p-0 col-8">hq audio file</p>
+                            </div>
+                            <div class="row justify-content-start">
+                                <img src="./img/check-lg.svg" class="check p-0" width="20" height="20" alt="check" />
+                                <p class="m-0 p-0 col-8">mixing and mastering</p>
+                            </div>
+                            <button class="btn btn-outline-secondary mt-3" type="submit">Checkout</button>
+                        </div>
+                    </div>
+                    <div class="row  justify-content-start">
+                        <h5 class="card-title mr-1 col-3 col-sm-2 col-md-3 col-lg-2 h3"><strong>Reviews</strong></h5>
+                        <div class="star col-2 ">
+                            <p class="m-0 h3"><strong>5.0</strong></p>
+                            <img src="./img/star-fill.svg" width="22" height="22" alt="star" />
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-title row justify-content-start">
+                            <div class="row row-cols-2 col-12 col-sm-6 col-md-7 col-lg-6">
+                                <h5 class="card-title m-0 col">marlonruiz30</h5>
+                                <div class="star col">
+                                    <p class="m-0"><strong>5.0</strong></p>
+                                    <img src="./img/star-fill.svg" width="18" height="18" alt="star" />
+                                </div>
+                            </div>
+                            <div class="text-success">
+                                <p class="m-0">20.06.2022</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit minima est iure.
+                                Perferendis tempore atque qui possimus nisi illum nihil minima quis provident, quo
+                                consequatur necessitatibus at aliquid sequi minus incidunt nemo omnis ea. Quam, suscipit
+                                ipsam. Dignissimos, quae magni?</p>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-title row justify-content-start">
+                            <div class="row row-cols-2 col-12 col-sm-6 col-md-7 col-lg-6">
+                                <h5 class="card-title m-0 col">marlonruiz30</h5>
+                                <div class="star col">
+                                    <p class="m-0"><strong>5.0</strong></p>
+                                    <img src="./img/star-fill.svg" width="18" height="18" alt="star" />
+                                </div>
+                            </div>
+                            <div class="text-success">
+                                <p class="m-0">20.06.2022</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit minima est iure.
+                                Perferendis tempore atque qui possimus nisi illum nihil minima quis provident, quo
+                                consequatur necessitatibus at aliquid sequi minus incidunt nemo omnis ea. Quam, suscipit
+                                ipsam. Dignissimos, quae magni?</p>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-title row justify-content-start">
+                            <div class="row row-cols-2 col-12 col-sm-6 col-md-7 col-lg-6">
+                                <h5 class="card-title m-0 col">marlonruiz30</h5>
+                                <div class="star col">
+                                    <p class="m-0"><strong>5.0</strong></p>
+                                    <img src="./img/star-fill.svg" width="18" height="18" alt="star" />
+                                </div>
+                            </div>
+                            <div class="text-success">
+                                <p class="m-0">20.06.2022</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit minima est iure.
+                                Perferendis tempore atque qui possimus nisi illum nihil minima quis provident, quo
+                                consequatur necessitatibus at aliquid sequi minus incidunt nemo omnis ea. Quam, suscipit
+                                ipsam. Dignissimos, quae magni?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container mb-5 position-relative">
+            <div class="logo col-6 text-center"><img src="img/logo.svg" alt="Logo" width="156" height="72"></div>
+            <div class="row flex-row mt-5 mb-3 justify-content-between">
+                <div
+                    class="footer_left col-6 col-md-4 col-lg-3 d-flex gap-3 flex-column align-items-center flex-md-row">
+                    <a href="#" class="link-dark">Blog</a>
+                    <a href="#" class="link-dark">Community</a>
+                    <a href="#" class="link-dark">Company</a>
+                </div>
+                <div
+                    class="footer_right col-6 col-md-4 col-lg-3 d-flex gap-3 flex-column align-items-center flex-md-row">
+                    <a href="#" class="link-dark">Help desk</a>
+                    <a href="#" class="link-dark">Resources</a>
+                    <a href="#" class="link-dark">Mobile App</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

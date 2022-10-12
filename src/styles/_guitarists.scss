@@ -1,0 +1,16 @@
+.nav_desktop {
+    display: none;
+}
+@media (min-width: 992px) {
+    .nav_mobile {
+        display: none;
+    }
+    .nav_desktop {
+        display: flex;
+    }
+ }
+.star{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
